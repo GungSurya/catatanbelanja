@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Grocery List</string>
+    <string name="firstNameErr">Enter Your First Name</string>
+    <string name="lastNameErr">Enter Your Last Name</string>
+    <string name="emailErr">Enter Correct Email</string>
+    <string name="phoneErr">Enter Correct Phone Number</string>
+</resources>

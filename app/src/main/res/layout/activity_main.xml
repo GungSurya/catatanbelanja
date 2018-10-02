@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.acere5vv02.pemrogramankomputerpembukuan.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+            <!-- This is a centered logo -->
+            <ImageView
+                android:id="@+id/tbProfilePhoto"
+                android:src="@drawable/menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+
+            />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/profile_image"
+                android:src="@drawable/headshots"
+                app:civ_border_width="1.5dp"
+                app:civ_border_color="@color/colorAccent"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                />
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/RLSearch"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbarSearch"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="Start Date"
+                android:id="@+id/startDate"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                />
+
+
+            <ImageView
+                android:id="@+id/btnSDate"
+                android:src="@drawable/datepickers"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_toRightOf="@+id/startDate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:hint="End Date"
+                android:id="@+id/endDate"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/btnEDate"
+                android:src="@drawable/datepickers"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_toRightOf="@+id/startDate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:text="GO"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RLSearch"
+        >
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
